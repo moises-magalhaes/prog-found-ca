@@ -91,9 +91,9 @@ subtractObjects(10, 7);
 
 var myArray = [];
 
-function functionArray(addToArray) {
-	console.log(addToArray);
-	myArray = addToArray;
+function functionArray(argument) {
+	myArray.push(argument);
+	console.log(myArray);
 }
 
-functionArray.call({ make: 'coffee' }, 'icecream');
+functionArray('coffee');
